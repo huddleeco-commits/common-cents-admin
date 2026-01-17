@@ -1,0 +1,41 @@
+{
+  "name": "business-admin",
+  "type": "frontend",
+  "description": "Shared admin dashboard for all generated businesses. Includes AI Manager, Settings, Analytics, Health, Assets management.",
+  "source": "blink-core",
+  "createdAt": "2026-01-11",
+  "files": [
+    "components/AdminLayout.jsx",
+    "components/AdminSidebar.jsx",
+    "components/DashboardHome.jsx",
+    "components/AIManager.jsx",
+    "components/AssetsManager.jsx",
+    "components/AnalyticsPage.jsx",
+    "components/HealthPage.jsx",
+    "components/BillingPage.jsx",
+    "components/settings/SettingsPage.jsx",
+    "components/settings/SettingsGeneral.jsx",
+    "components/settings/SettingsInfra.jsx",
+    "components/settings/SettingsAPIs.jsx",
+    "components/settings/SettingsPayments.jsx",
+    "components/settings/SettingsShipping.jsx",
+    "components/settings/SettingsAI.jsx",
+    "components/settings/SettingsEmail.jsx",
+    "components/settings/SettingsAnalytics.jsx",
+    "components/settings/SettingsSecurity.jsx",
+    "components/settings/SettingsIntegrations.jsx",
+    "components/settings/SettingsAdvanced.jsx",
+    "hooks/useBrain.js",
+    "hooks/useHealth.js",
+    "hooks/useAI.js"
+  ],
+  "dependencies": [
+    "react",
+    "react-router-dom",
+    "lucide-react"
+  ],
+  "connectsTo": {
+    "backend": ["admin-dashboard", "analytics", "notifications", "stripe-payments"],
+    "config": ["brain.json"]
+  }
+}
